@@ -2,7 +2,11 @@ apply plugin: 'java'
 
 // maven仓库
 repositories {
-    mavenCentral()
+        maven {
+            url "http://192.168.108.60/nexus/content/groups/public/"
+        }
+        jcenter()
+        mavenCentral()
 }
 
 sourceSets {
